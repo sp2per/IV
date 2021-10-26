@@ -13,7 +13,7 @@ jobs:
         sudo chmod a+rx /usr/local/bin/youtube-dl
     - name: Get HitFm.m3u8
       run: |
-        touch ./ HitFm.m3u8
+        touch ./ hitfm.m3u8
         sudo cat >./ HitFm.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
