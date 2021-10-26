@@ -200,19 +200,19 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=540000
         $(youtube-dl -g https://www.youtube.com/channel/UCoo-jAsJgM8z09ddlhcBlSA/live)
         EOL
-    - name: Get parliamentarytv1.m3u8
+    - name: Get parliament1.m3u8
       run: |
-        touch ./parliamentarytv1.m3u8
-        sudo cat >./parliamentarytv1.m3u8 <<EOL
+        touch ./parliament1.m3u8
+        sudo cat >./parliament1.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5400000
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=540000
         $(youtube-dl -g https://www.youtube.com/watch?v=jRsyBLhot6E)
         EOL
-    - name: Get parliamentarytv2.m3u8
+    - name: Get parliament2.m3u8
       run: |
-        touch ./parliamentarytv2.m3u8
-        sudo cat >./parliamentarytv2.m3u8 <<EOL
+        touch ./parliament1.m3u8
+        sudo cat >./parliament1.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5400000
