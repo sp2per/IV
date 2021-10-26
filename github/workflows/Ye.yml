@@ -218,24 +218,6 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5400000
         $(youtube-dl -g https://www.youtube.com/watch?v=RAP4h3q6_Sg)
         EOL
-    - name: Get abcnewsus.m3u8
-      run: |
-        touch ./abcnewsus.m3u8
-        sudo cat >./abcnewsus.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5400000
-        $(youtube-dl -g https://www.youtube.com/user/ABCNews/live)
-        EOL
-    - name: Get abc7news
-      run: |
-        touch ./abc7news.m3u8
-        sudo cat >./abc7news.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5400000
-        $(youtube-dl -g https://www.youtube.com/channel/UCq9e_hCv2jvgck8WowW1NXg/live)
-        EOL
     - name: Get sbn.m3u8
       run: |
         touch ./sbn.m3u8
