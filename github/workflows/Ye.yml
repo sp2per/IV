@@ -20,6 +20,15 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5400000
         $(youtube-dl -g https://www.youtube.com/c/ctitv/live)
         EOL
+    - name: Get ctitv1.m3u8
+      run: |
+        touch ./ctitv1.m3u8
+        sudo cat >./ctitv.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=3200000
+        $(youtube-dl -g https://www.youtube.com/c/ctitv/live)
+        EOL
     - name: Get ttvnews.m3u8
       run: |
         touch ./ttvnews.m3u8
